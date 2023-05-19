@@ -1,4 +1,5 @@
 import os
+from time import sleep
 
 from modules.game import Game
 from modules.ui import printLogo as ui_logo
@@ -26,8 +27,9 @@ def find_json_files():
 GAMES = find_json_files()
 
 while 1:
-    ui_logo()
     # Main Loop
+    ui_logo()
+    sleep(1)
     try:
         game_file = ui_selector(
             "Please select an adventure file", GAMES[1], clear_screen=True
