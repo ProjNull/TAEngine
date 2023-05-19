@@ -1,0 +1,59 @@
+[
+    {
+        "ID": 1,
+        "Question": "You walk through a hallway. There are 4 doors.",
+        "Answers": {
+            "1": 2,
+            "2": 3,
+            "3": 4,
+            "4": 5
+        }
+    },
+    {
+        "ID": 2,
+        "Question": "You went to the first door on the left, but there was an endless pit. Your soul ends up falling down till the end of time.",
+        "Answers": {
+            "Exit": 0,
+            "Restart": 1
+        }
+    },
+    {
+        "ID": 3,
+        "Question": "You went through the second door on the left, there is nothing inside the small room.",
+        "Answers": {
+            "Go back": 1
+        }
+    },
+    {
+        "ID": 4,
+        "Question": "You went through the first door on the right, there are 2 doors. A red one, and a blue one. Which one will you pick?",
+        "Answers": {
+            "Red": 6,
+            "Blue": 7
+        }
+    },
+    {
+        "ID": 5,
+        "Question": "You went through the second door on the right, there is a chair. Sit down?",
+        "Answers": {
+            "Yes": 6,
+            "No": 1
+        }
+    },
+    {
+        "ID": 6,
+        "Question": "You fell through the floor, falling down to your death.",
+        "Answers": {
+            "Exit": 0,
+            "Restart": 1
+        }
+    },
+    {
+        "ID": 7,
+        "Question": "You went through the blue door, escaping this prison of repeating hallways and rooms. You can now enjoy your freedom until the day you die.",
+        "Answers": {
+            "End Game": 0,
+            "New Game": 1
+        }
+    }
+]

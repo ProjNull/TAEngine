@@ -52,17 +52,22 @@ def spliter(size):
 
 
 def printUi(text, options_array, clear_screen=False):
+    # find longest
+    split_lenght = 0
+    for i in [y + f"| {len(options_array)} " for y in options_array] + [text]:
+        if len(i) > split_lenght:
+            split_lenght = len(i)
     while True:
         if clear_screen:
             clearScreen()
-        spliter(10)
+        spliter(split_lenght)
         print(text)
-        spliter(10)
+        spliter(split_lenght)
         for option_index, option_text in enumerate(options_array):
             print(f"| {option_index+1}) {option_text}")
-        spliter(10)
+        spliter(split_lenght)
         option = input(f"Select option: ")
-        spliter(10)
+        spliter(split_lenght)
         try:
             option = int(option)
             if option <= len(options_array):
