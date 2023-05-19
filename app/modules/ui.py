@@ -1,9 +1,10 @@
 def clearScreen():
-    print("\033c", end='')
+    print("\033c", end="")
+
 
 def printLogo():
-    print("""
-                                                                                      
+    print(
+        """
                                                         .'''''.                 
      O$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$m'            )@$$$$$$,                
     "@$$$$%obpwZ0QUm$$$$$@hZZqpbkaMB$$$$@j            n$$$$$$$$t                
@@ -29,16 +30,17 @@ def printLogo():
              h$$$$$L             ;b$$@-                        +W$$$$$o"           a<      up   (p}a   m{     >a` '#[  .*}   m{bv  >%~                
        .^:l>{$$$$$$r>l:`.     ';<k$$@1l".                    ^I-o$$$$$8f!".       tZ`     ,d_   l%Oj   nQ     Uz. th`  )a"   /mB!  ud                 
      h@$$$$$$$$$$$$$$$$$$8} !o$$$$$$$$$$@r                "d@$$$$$$$$$$$$$@(     .WaZZZ0  +d'    k#i   'zWLtxQW] `dj  .pn    i8Z  ,dkZZZv.            
-                                                                                
-                                                                                
-    """)
+    """ + "\n"
+    )
+
 
 def spliter(size):
-    for i in range(1,size):
-        print("=",end="")
+    for i in range(1, size):
+        print("=", end="")
     print("=")
 
-def printUi(text,options_array,clear_screen = False):
+
+def printUi(text, options_array, clear_screen=False):
     while True:
         if clear_screen:
             clearScreen()
