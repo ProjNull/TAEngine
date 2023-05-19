@@ -29,7 +29,7 @@ GAMES = find_json_files()
 while 1:
     # Main Loop
     ui_logo()
-    sleep(1)
+    sleep(3)
     try:
         game_file = ui_selector(
             "Please select an adventure file", GAMES[1], clear_screen=True
