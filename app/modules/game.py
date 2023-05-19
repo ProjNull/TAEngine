@@ -17,7 +17,6 @@ class Game:
                 data["Answers"] = {}
                 for k, v in a.items():
                     data["Answers"][k.lower()] = v
-                    print(data["Answers"])
                 questions[data.get("ID")] = Question(**data)
         return questions
 
