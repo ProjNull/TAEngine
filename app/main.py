@@ -39,5 +39,10 @@ while 1:
     game = GAMES[0][game_file]
     # Run game
     g = Game(game)
-    g()
+    try:
+        g()
+    except EOFError:
+        pass
+    except KeyboardInterrupt:
+        pass
 print("Goodbye!")
