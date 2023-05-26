@@ -71,7 +71,7 @@ You write adventures in JSON and rename the extension to .taj
 
 ### Built With
 
-- [![Next][Next.js]][Next-url]
+- [![Python][python.org]][python-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
